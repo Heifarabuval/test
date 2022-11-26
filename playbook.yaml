@@ -1,0 +1,11 @@
+- hosts: servers
+  vars_files:
+    - ./secret.yml
+  roles:
+   - role: "./roles/hostname"
+   - role: "./roles/user"
+   - role: "./roles/display_login_message"
+   - role: "./roles/install_packages"
+   - role: "./roles/install_apache2"
+   - role: "./roles/install_php"
+   - role: "./roles/install_MariaDb"
